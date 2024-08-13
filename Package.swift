@@ -10,12 +10,12 @@ let package = Package(
 	dependencies: [],
 	targets: [
 		.binaryTarget(
-			name: "RustXcframework",
+			name: "EMPRustXcframework",
 			path: "RustXcframework.xcframework"
 		),
 		.target(
 			name: "EMProxy",
-			dependencies: ["RustXcframework"])
+			dependencies: ["EMPRustXcframework"])
 	]
 )
 	
